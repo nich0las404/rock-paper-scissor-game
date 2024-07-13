@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="games-container">
+        <div class="gif-background"></div>
+        <h1 id="title">Rock Paper Scissor Game</h1>
+        <div id="choices">
+          <button class="btn" onclick="playGame('rock')">
+            <div class="btn__bg">
+              <span class="btn__bg__layer btn__bg__layer-first"></span>
+              <span class="btn__bg__layer btn__bg__layer-second"></span>
+              <span class="btn__bg__layer btn__bg__layer-third"></span>
+            </div>
+        
+            <span class="btn__text-out">👊</span>
+            <span class="btn__text-in">👊</span>
+          </button>
+          <button class="btn" onclick="playGame('paper')">
+            <div class="btn__bg">
+              <span class="btn__bg__layer btn__bg__layer-first"></span>
+              <span class="btn__bg__layer btn__bg__layer-second"></span>
+              <span class="btn__bg__layer btn__bg__layer-third"></span>
+            </div>
+        
+            <span class="btn__text-out">✋</span>
+            <span class="btn__text-in">✋</span>
+          </button>
+          <button class="btn" onclick="playGame('scissor')">
+            <div class="btn__bg">
+              <span class="btn__bg__layer btn__bg__layer-first"></span>
+              <span class="btn__bg__layer btn__bg__layer-second"></span>
+              <span class="btn__bg__layer btn__bg__layer-third"></span>
+            </div>
+        
+            <span class="btn__text-out">✌️</span>
+            <span class="btn__text-in">✌️</span>
+          </button>
+          <!-- dialog -->
+           <dialog class="win-dialog">
+            <h1 class="dialog-text"></h1>
+            <button class="retry-btn" onclick="resetGame()">Retry</button>
+           </dialog>
+        </div>
+        
+        <div id="score-container">
+            <p class="player-score-container">Score: <span class="player-score">0</span></p>
+            <p class="computer-score-container">Computer's Score: <span class="computer-score">0</span></p>
+        </div>
+        <div id="game-result">
+          
+        </div>
+      
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
